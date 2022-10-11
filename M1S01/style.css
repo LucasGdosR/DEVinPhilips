@@ -1,0 +1,58 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+p{
+    font-size: 14px;
+}
+.flex-row{
+    flex-direction: row; 
+    align-items: flex-start;
+}
+.coluna{
+    max-width: 33%;
+}
+footer{
+    background-color: bisque;
+    position: fixed;
+    bottom: 0;
+}
+iframe{
+    margin-bottom: 40px;
+}
+body{
+    background-color: lightgray;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
+}
+#botao1{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+nav{
+    display:flex;
+    position: fixed;
+    top: 0;
+    height: 35px;
+    width: 98.3%;
+    background-color: bisque;
+}
+nav div{
+    flex-grow:1;
+}
+.transicao{
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+nav a:hover{
+    background-color: blueviolet;
+}
