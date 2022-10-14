@@ -1,5 +1,6 @@
 var isPrime = (num) => {
-    for (var j = 2; j < num; j++) {
+    var root = Math.sqrt(num);
+    for (var j = 2; j < root; j++) {
         if (!(num % j)) return false;
     }
     console.log(num);
