@@ -1,14 +1,14 @@
-var isPrime = (num) => {
-    var root = Math.sqrt(num);
-    for (var j = 2; j < root; j++) {
-        if (!(num % j)) return false;
+let primes = [2];
+
+const isPrime = (num) => {
+    for (let prime of primes) {
+        if (!(num % prime)) return false;
     }
-    console.log(num);
+    primes.push(num);
     return true;
 }
 
-var count = 0;
-for (var i = 2; i <= 1000; i++) {
-    if (isPrime(i)) count++;
+for (let i = 3; i <= 1000; i += 2) {
+    if (isPrime(i)) console.log(i);
 }
-console.log(count);
+console.log(primes.length);
