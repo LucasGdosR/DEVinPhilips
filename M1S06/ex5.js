@@ -1,4 +1,4 @@
-async function obterClienteNoBancoDeDados(idCliente) {
+function obterClienteNoBancoDeDados(idCliente) {
     return new Promise( (resolve, reject) => {
             const cliente = { nome: 'bruce wayne', id: idCliente };
             resolve(cliente);
