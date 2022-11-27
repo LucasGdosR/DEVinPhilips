@@ -8,4 +8,8 @@ import { notifications } from './notifications';
 })
 export class NotificationListComponent {
   notifications = notifications;
+  
+  read(notification: { lido: boolean}){
+    notification.lido = true;
+  }
 }
