@@ -2,29 +2,26 @@
     <div class="row">
       <div class="col-12">
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+          <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Ifood</h5>
-              <small>17 min ago</small>
+              <h5 class="mb-1"> {{ notifications[0].app }}</h5>
+              <small>{{ notifications[0].timestamp }}</small>
             </div>
-            <p class="mb-1">Kelvis chegou com seu pedido.</p>
-            <small>Se tiver gostado da entrega, dê uma gorjeta!</small>
+            <p class="mb-1">{{ notifications[0].description }}</p>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Whatsapp</h5>
-              <small class="text-muted">30 min ago</small>
+              <h5 class="mb-1"> {{ notifications[1].app }}</h5>
+              <small>{{ notifications[1].timestamp }}</small>
             </div>
-            <p class="mb-1">RPGZÃO</p>
-            <small class="text-muted">Ageu: hype!</small>
+            <p class="mb-1">{{ notifications[1].description }}</p>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Youtube</h5>
-              <small class="text-muted">2 hours ago</small>
+              <h5 class="mb-1"> {{ notifications[2].app }}</h5>
+              <small>{{ notifications[2].timestamp }}</small>
             </div>
-            <p class="mb-1">Marombeiro Cientista fez um upload de um novo vídeo.</p>
-            <small class="text-muted">Ciência da Nutrição Peri-treino para Adaptações de Resistência</small>
+            <p class="mb-1">{{ notifications[2].description }}</p>
           </a>
         </div>
       </div>
