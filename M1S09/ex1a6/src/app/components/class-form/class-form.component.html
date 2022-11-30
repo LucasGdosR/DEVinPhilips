@@ -26,7 +26,7 @@
                 <option value="claudia">Cláudia</option>
               </select>
         </div>
-        <div class="col-2 form-check mt-3 mb-4 ms-5">
+        <div class="col-2 form-check mt-3 mb-4 offset-md-1">
             <label for="obrigatoria" class="form-label">Obrigatória</label>
             <input type="radio" name="opcional" id="obrigatoria" class="form-check-input">
         </div>
@@ -34,5 +34,24 @@
             <label for="optativa" class="form-label">Optativa</label>
             <input type="radio" name="opcional" id="optativa" class="form-check-input">
         </div>
+        <div class="col-2 offset-md-4 mt-3 mb-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Enviar</button>
+        </div>
     </main>
 </form>
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalLabel">Sucesso!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Formulário enviado com sucesso.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>

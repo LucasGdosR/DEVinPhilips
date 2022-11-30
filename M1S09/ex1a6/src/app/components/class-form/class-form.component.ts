@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./class-form.component.css']
 })
 export class ClassFormComponent {
-
+  submitForm(){
+    
+  }
 }
