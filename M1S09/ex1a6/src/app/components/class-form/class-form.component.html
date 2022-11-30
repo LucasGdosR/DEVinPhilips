@@ -1,0 +1,38 @@
+<form class="container bg-info bg-opacity-50 mt-3 rounded-4">
+    <header class="row">
+        <div class="col-12"></div>
+        <h1 class="mx-4 mt-4">Cadastro de Disciplina</h1>
+    </header>
+    <main class="row">
+        <div class="col-6 my-3">
+            <label for="nome" class="form-label">Nome</label><br>
+            <input type="text" id="nome" class="form-control">
+        </div>
+        <div class="col-6 my-3">
+            <label for="carga" class="form-label">Carga horária (horas-aula)</label><br>
+            <input type="number" id="carga" class="form-control">
+        </div>
+        <div class="col-6 my-3">
+            <label for="escola" class="form-label">Escola</label><br>
+            <input type="text" id="escola" class="form-control">
+        </div>
+        <div class="col-6 my-3">
+            <label for="professor" class="form-label">Professor(a)</label><br>
+            <select class="form-select" id="professor">
+                <option value="">Selecione uma opção</option>
+                <option value="otavio">Otávio</option>
+                <option value="vivian">Vivian</option>
+                <option value="leandro">Leandro</option>
+                <option value="claudia">Cláudia</option>
+              </select>
+        </div>
+        <div class="col-2 form-check mt-3 mb-4 ms-5">
+            <label for="obrigatoria" class="form-label">Obrigatória</label>
+            <input type="radio" name="opcional" id="obrigatoria" class="form-check-input">
+        </div>
+        <div class="col-2 form-check mt-3 mb-4">
+            <label for="optativa" class="form-label">Optativa</label>
+            <input type="radio" name="opcional" id="optativa" class="form-check-input">
+        </div>
+    </main>
+</form>
