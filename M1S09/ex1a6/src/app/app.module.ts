@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ItemCardComponent } from './components/item-card/card.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { FormsModule } from "@angular/forms";
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FormsModule } from "@angular/forms";
     NavbarComponent,
     ItemCardComponent,
     AuthComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
