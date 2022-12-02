@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalculadoraService } from './calculadora.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'form-cadastro';
+  constructor(public calculadora: CalculadoraService){}
+  
+  resultado: number = 0;
+  a: number = 0;
+  b: number = 0;
 }

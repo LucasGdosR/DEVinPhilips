@@ -57,3 +57,30 @@
     </div>
   </div>
 </form>
+<div class="container border border-2 mt-4 bg-success bg-opacity-25 rounded-4">
+  <div class="row mt-3">
+    <div class="col-6">
+      <label class="form-label" for="">Primeiro número</label><br>
+      <input class="form-control" type="number" [(ngModel)]="a"><br>
+    </div>
+    <div class="col-6">
+      <label class="form-label" for="">Segundo número</label><br>
+      <input class="form-control" type="number" [(ngModel)]="b"><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <button class="btn btn-success" (click)="resultado = this.calculadora.somar(a, b)">Somar</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-danger" (click)="resultado = this.calculadora.subtrair(a, b)">Subtrai</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-info" (click)="resultado = this.calculadora.multiplicar(a, b)">Multiplica</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-warning" (click)="resultado = this.calculadora.dividir(a, b)">Divide</button>
+    </div>
+  </div>
+  <p class="my-3">Resultado: <span>{{ resultado }}</span></p>
+</div>
