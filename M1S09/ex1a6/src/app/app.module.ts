@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ClassFormComponent } from './components/class-form/class-form.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ItemCardComponent } from './components/item-card/card.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -12,9 +14,11 @@ import { ItemCardComponent } from './components/item-card/card.component';
     ClassFormComponent,
     NavbarComponent,
     ItemCardComponent,
+    AuthComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
