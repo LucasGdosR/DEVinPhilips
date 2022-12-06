@@ -1,7 +1,7 @@
 <div class="container my-3">
     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary">Todos</button>
-        <button type="button" class="btn btn-secondary">Lidos</button>
-        <button type="button" class="btn btn-secondary">Não Lidos</button>
+        <button (click)="this.filter.emit('all')" type="button" class="btn btn-secondary">Todos</button>
+        <button (click)="this.filter.emit('read')" type="button" class="btn btn-secondary">Lidos</button>
+        <button (click)="this.filter.emit('unread')" type="button" class="btn btn-secondary">Não Lidos</button>
     </div>
 </div>
