@@ -25,7 +25,7 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       { path:'', redirectTo:'home', pathMatch:'full' },
       { path:'home', component:HomeComponent },
-      { path:'home:lido', component:HomeComponent},
+      { path:'home/:lido', component:HomeComponent},
       { path:'about', component:AboutComponent },
     ])
   ],
