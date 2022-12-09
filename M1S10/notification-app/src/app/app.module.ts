@@ -23,12 +23,13 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path:'', redirectTo:'home', pathMatch:'full' },
+      { path:'', redirectTo:'home/todos', pathMatch:'full' },
       { path:'home',
       children:[
         { path:'', component:HomeComponent },
         { path:':todosLidoNaoLido', component:HomeComponent },
       ] },
+      { path:'about', component:AboutComponent}
     ])
   ],
   providers: [],
