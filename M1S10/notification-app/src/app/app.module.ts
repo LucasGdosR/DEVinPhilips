@@ -24,9 +24,11 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     RouterModule.forRoot([
       { path:'', redirectTo:'home', pathMatch:'full' },
-      { path:'home', component:HomeComponent },
-      { path:'home/:lido', component:HomeComponent},
-      { path:'about', component:AboutComponent },
+      { path:'home',
+      children:[
+        { path:'', component:HomeComponent },
+        { path:':todosLidoNaoLido', component:HomeComponent },
+      ] },
     ])
   ],
   providers: [],
