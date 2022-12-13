@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CapitalizePhilipsPipe } from './pipes/capitalize-philips.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PhotoListComponent } from './components/photo-list/photo-list.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { PhotoListComponent } from './components/photo-list/photo-list.component
     CapitalizePhilipsPipe,
     NavbarComponent,
     PhotoListComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
