@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ex8';
+  title = 'ToDoApp';
+  taskToAdd : string = '';
+  taskList : string[] = [];
+
+  addTask() {
+    this.taskList.push(this.taskToAdd);
+    this.taskToAdd = '';
+  }
 }
