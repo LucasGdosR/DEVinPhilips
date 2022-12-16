@@ -17,3 +17,11 @@
             voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!</span>
     </app-card>
 </div>
+<div class="container">
+    <label for="">Insira qualquer coisa</label> <br>
+    <input type="text" [(ngModel)]="texto" required="">
+    <div *ngIf="texto != ''; else invalido">Válido</div>
+    <ng-template #invalido>
+        <div>Inválido, campo vazio.</div>
+    </ng-template>
+</div>
