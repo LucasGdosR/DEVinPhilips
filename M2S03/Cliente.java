@@ -30,4 +30,9 @@ public class Cliente {
         this.altura = altura;
         this.idade = idade;
     }
+
+    public Double emagrecer(Double peso) {
+        this.peso -= peso;
+        return this.peso;
+    }
 }

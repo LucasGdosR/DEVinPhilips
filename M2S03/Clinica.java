@@ -51,4 +51,21 @@ public class Clinica {
 
         return imc;
     }
+
+    /*
+    Crie um método chamado tratamento que receba um Cliente, esse método vai reduzir o peso do Cliente em 5 quilos e
+    após isso irá retornar o novo peso do Cliente.
+
+    Esse método deve receber como parâmetros o id do Cliente na lista da clinica, e caso o cliente não exista ele deve
+    exibir uma mensagem dizendo “cliente não identificado“. O peso do Cliente identificado deve ser alterada após a
+    execução do método.
+     */
+
+    public Double tratamento(int idDoCliente) {
+        try {
+            return this.clientesDaClinica.get(idDoCliente).emagrecer(5D);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Cliente não identificado.");
+        }
+    }
 }
