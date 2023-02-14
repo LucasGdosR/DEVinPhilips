@@ -7,7 +7,7 @@ public class Cliente {
     Adicione um novo atributo na Classe Clinica que receba uma Lista de Clientes, essa Lista deve conter todos os
     Cliente dessa Clinica.
      */
-    Double peso;
-    Double altura;
-    Integer idade;
+    private Double peso;
+    private Double altura;
+    private Integer idade;
 }

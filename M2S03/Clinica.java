@@ -7,13 +7,20 @@ public class Clinica {
     Vamos criar um sistema para uma clínica de emagrecimento. Vamos começar pela Classe Clínica. Essa Classe deve ter
     os atributos nome do dono, nome da clínica, CNPJ, endereço (esse deve ser o logradouro) e o código da Clínica.
      */
-    String nomeDoDono;
-    String nomeDaClinica;
-    Long CNPJ;
-    String logradouro;
-    Integer codigoDaClinica;
-    List<Cliente> clientesDaClinica;
+    private String nomeDoDono;
+    private String nomeDaClinica;
+    private Long CNPJ;
+    private String logradouro;
+    private Integer codigoDaClinica;
+    /*
+    Adicione um encapsulamento nas classes criadas anteriormente. Para o atributo Lista de Cliente adicione um método
+    que nos permita adicionar um Cliente por vez a essa lista.
+     */
+    private List<Cliente> clientesDaClinica;
 
+    public void adicionarCliente(Cliente novoCliente){
+        clientesDaClinica.add(novoCliente);
+    }
     /*
     Vamos criar um método para calcular o IMC dos pacientes que veem a Clínica. Crie esse método dentro da classe
     Clínica e esse método deve retornar o número do IMC e também deve exibir no console qual é a categoria do IMC da
