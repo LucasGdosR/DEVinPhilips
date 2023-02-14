@@ -1,5 +1,7 @@
 package DEVinPhilips.M2S03;
 
+import java.util.List;
+
 public class Clinica {
     /*
     Vamos criar um sistema para uma clínica de emagrecimento. Vamos começar pela Classe Clínica. Essa Classe deve ter
@@ -10,6 +12,7 @@ public class Clinica {
     Long CNPJ;
     String logradouro;
     Integer codigoDaClinica;
+    List<Cliente> clientesDaClinica;
 
     /*
     Vamos criar um método para calcular o IMC dos pacientes que veem a Clínica. Crie esse método dentro da classe
