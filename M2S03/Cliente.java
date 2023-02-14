@@ -11,6 +11,8 @@ public class Cliente {
     private Double altura;
     private Integer idade;
 
+    private String nome;
+
     /*
     Adicioner construtores e cada classe anterior.
     Adicione na Classe Cliente um construtor que receba apenas altura e peso e um construtor que receba todos os atributos.
@@ -34,5 +36,9 @@ public class Cliente {
     public Double emagrecer(Double peso) {
         this.peso -= peso;
         return this.peso;
+    }
+
+    public String getNome() {
+        return nome;
     }
 }

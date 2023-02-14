@@ -82,4 +82,14 @@ public class Clinica {
             return null;
         }
     }
+
+    /*
+    Crie um método na Classe Clínica que retorne a lista com todos os Cliente dessa clinica. Esse método também deve
+    exibir o nome de todos o clientes dessa Clínica.
+     */
+
+    public List<Cliente> getClientesDaClinica() {
+        this.clientesDaClinica.forEach(cliente -> System.out.println(cliente.getNome()));
+        return getClientesDaClinica();
+    }
 }
