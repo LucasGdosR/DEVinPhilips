@@ -10,4 +10,24 @@ public class Cliente {
     private Double peso;
     private Double altura;
     private Integer idade;
+
+    /*
+    Adicioner construtores e cada classe anterior.
+    Adicione na Classe Cliente um construtor que receba apenas altura e peso e um construtor que receba todos os atributos.
+
+
+    Adicione na Classe Clinica um construtor que recebe apenas o nome do dono e um construtor que rebe o nome do dono e
+    um Lista de Clientes.
+     */
+
+    public Cliente(Double peso, Double altura) {
+        this.peso = peso;
+        this.altura = altura;
+    }
+
+    public Cliente(Double peso, Double altura, Integer idade) {
+        this.peso = peso;
+        this.altura = altura;
+        this.idade = idade;
+    }
 }

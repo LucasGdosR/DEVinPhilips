@@ -18,6 +18,15 @@ public class Clinica {
      */
     private List<Cliente> clientesDaClinica;
 
+    public Clinica(String nomeDoDono) {
+        this.nomeDoDono = nomeDoDono;
+    }
+
+    public Clinica(String nomeDoDono, List<Cliente> clientesDaClinica) {
+        this.nomeDoDono = nomeDoDono;
+        this.clientesDaClinica = clientesDaClinica;
+    }
+
     public void adicionarCliente(Cliente novoCliente){
         clientesDaClinica.add(novoCliente);
     }
