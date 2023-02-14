@@ -62,10 +62,24 @@ public class Clinica {
      */
 
     public Double tratamento(int idDoCliente) {
+        return tratamento(idDoCliente, 5D);
+    }
+
+    /*
+    Crie um método chamado tratamento que receba um Cliente e um valor numérico, esse método vai reduzir o peso do
+    Cliente pelo valor recebido no método e após isso irá retornar o novo peso do Cliente.
+
+    Esse método deve receber como parâmetros o id do Cliente na lista da clinica e o valor a ser reduzido do peso, e
+    caso o cliente não exista ele deve exibir uma mensagem dizendo “cliente não identificado“. O peso do Cliente
+    identificado deve ser alterada após a execução do método.
+     */
+
+    public Double tratamento(int idDoCliente, Double kgPerdidos) {
         try {
-            return this.clientesDaClinica.get(idDoCliente).emagrecer(5D);
+            return this.clientesDaClinica.get(idDoCliente).emagrecer(kgPerdidos);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Cliente não identificado.");
+            return null;
         }
     }
 }
