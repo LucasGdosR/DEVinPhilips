@@ -1,0 +1,5 @@
+O JDBC é um Adapter, uma camada de abstração que permite que o mesmo código Java funcione com diferentes SGBD, obrigando os drivers a cumprir um contrato, como uma interface.
+
+JPA
+
+Hibernate/Spring Data
