@@ -1,0 +1,1 @@
+DTO, ou Data Transfer Object, é um objeto tradicionalmente passado da camada de Controller para a de Service e vice-versa. São objetos que contêm apenas as informações relevantes para o usuário, deixando o restante dos atributos ocultos na camada de Repository e suas transações com a camada de Service.
