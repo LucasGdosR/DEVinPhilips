@@ -4,4 +4,4 @@ Hibernate foi uma biblioteca pioneira que reduziu a verbosidade do JDBC, mas con
 
 JPA é uma interface que tornou essa mudança de um BD pra outro menos trabalhosa, padronizando como deveriam seus métodos.
 
-Spring Data
+Spring Data é um conjunto de bibliotecas / dependências que abstrai a conexão com banco o banco de dados e fornece implementações otimizadas e automáticas de operações com o banco de dados.
