@@ -7,7 +7,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/produto")
@@ -18,11 +21,10 @@ public class ProdutoController {
         this.service = service;
     }
 
-    @GetMapping
-    public String mostrarProdutoPadrao() {
-        service.criaProdutoMock();
-        return "produto-padrao";
-    }
+//    @GetMapping
+//    public String mostrarProdutoPadrao() {
+//        return "produto-padrao";
+//    }
 
     @GetMapping("/{id}")
     public String mostrarProdutoPorId(@PathVariable Long id, Model model) {
@@ -32,5 +34,23 @@ public class ProdutoController {
         model.addAttribute("dataDeLancamento", produto.dataDeLancamento());
         model.addAttribute("preco", produto.preco());
         return "produto";
+    }
+
+    @GetMapping
+    public String mostrarTodosProdutos(Model model) {
+        List<ProdutoDTO> produtos = service.findAll();
+        model.addAttribute("produtos", produtos);
+        return "lista-de-produtos";
+    }
+
+    @GetMapping("/cadastro")
+    public String mostrarFormularioDeCadastro(ProdutoDTO produtoDTO, Model model) {
+        return "formulario-de-cadastro";
+    }
+
+    @PostMapping("/cadastro")
+    public String adicionarProduto(ProdutoDTO produtoDTO, Model model) {
+        service.save(produtoDTO);
+        return "redirect:../produto";
     }
 }

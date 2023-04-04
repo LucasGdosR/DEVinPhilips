@@ -5,7 +5,8 @@ import com.example.semana10.model.ProdutoDTO;
 import com.example.semana10.repository.ProdutoRepository;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Stream;
 
 @Service
 public class ProdutoService {
@@ -23,12 +24,25 @@ public class ProdutoService {
                               produto.getPreco());
     }
 
-    public void criaProdutoMock() {
-        Produto produto = new Produto();
-        produto.setNome("Banana");
-        produto.setDescricao("Banana prata madura.");
-        produto.setDataDeLancamento(LocalDate.now());
-        produto.setPreco(2.99);
-        repository.save(produto);
+    public List<ProdutoDTO> findAll() {
+        List<Produto> produtoStream = (List<Produto>) repository.findAll();
+        return produtoStream.stream().map(
+                produto -> new ProdutoDTO(
+                        produto.getNome(),
+                        produto.getDescricao(),
+                        produto.getDataDeLancamento(),
+                        produto.getPreco()))
+                .toList();
+    }
+
+    public void save(ProdutoDTO produtoDTO) {
+        repository.save(
+                Produto.builder()
+                        .nome(produtoDTO.nome())
+                        .descricao(produtoDTO.descricao())
+                        .dataDeLancamento(produtoDTO.dataDeLancamento())
+                        .preco(produtoDTO.preco())
+                        .build()
+        );
     }
 }
