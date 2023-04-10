@@ -1,0 +1,86 @@
+<form action="" class="container bg-info mt-3 bg-opacity-25 rounded-4">
+  <div class="row ">
+    <div class="col-12">
+      <h1 class="text-info border-bottom border-info border-2 mx-4 mt-4">Cadastro</h1>
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col-6">
+      <label class="form-label" for="nome">Nome</label><br>
+      <input class="form-control" type="text" id="nome">
+    </div>
+    <div class="col-6">
+      <label class="form-label" for="sobrenome">Sobrenome</label><br>
+      <input class="form-control" type="text" id="sobrenome">
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col-12">
+      <label class="form-label" for="email">Email</label><br>
+      <input class="form-control" type="email" id="email">
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col-6">
+      <label class="form-label" for="senha">Senha</label><br>
+      <input class="form-control" type="password" id="senha">
+    </div>
+    <div class="col-6">
+      <label class="form-label" for="idade">Idade</label><br>
+      <input class="form-control" type="number" id="idade">
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col-12">
+      <label class="form-label" for="mora">Mora na região de Santa Catarina?</label><br>
+      <select id="mora">
+        <option value="">Selecione uma opção</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col-12">
+      <label class="form-label" for="">Quais tecnologias você já estudou?</label><br>
+      <input class="form-check-input mb-2" type="checkbox" name="" id="">
+      <label class="form-check-label" for="exampleCheck1">Angular</label><br>
+      <input class="form-check-input mb-2" type="checkbox" name="" id="">
+      <label class="form-check-label" for="exampleCheck1">Docker</label><br>
+      <input class="form-check-input mb-2" type="checkbox" name="" id="">
+      <label class="form-check-label" for="exampleCheck1">Java</label><br>
+      <input class="form-check-input mb-2" type="checkbox" name="" id="">
+      <label class="form-check-label" for="exampleCheck1">Javascript</label><br>
+      <input class="form-check-input mb-2" type="checkbox" name="" id="">
+      <label class="form-check-label" for="exampleCheck1">Python</label><br>
+      <input class="btn btn-primary mt-2 mb-4" type="submit" value="Enviar">
+    </div>
+  </div>
+</form>
+<div class="container border border-2 mt-4 bg-success bg-opacity-25 rounded-4">
+  <div class="row mt-3">
+    <div class="col-6">
+      <label class="form-label" for="">Primeiro número</label><br>
+      <input class="form-control" type="number" [(ngModel)]="a"><br>
+    </div>
+    <div class="col-6">
+      <label class="form-label" for="">Segundo número</label><br>
+      <input class="form-control" type="number" [(ngModel)]="b"><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <button class="btn btn-success" (click)="resultado = this.calculadora.somar(a, b)">Somar</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-danger" (click)="resultado = this.calculadora.subtrair(a, b)">Subtrai</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-info" (click)="resultado = this.calculadora.multiplicar(a, b)">Multiplica</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-warning" (click)="resultado = this.calculadora.dividir(a, b)">Divide</button>
+    </div>
+  </div>
+  <p class="my-3">Resultado: <span>{{ resultado }}</span></p>
+</div>

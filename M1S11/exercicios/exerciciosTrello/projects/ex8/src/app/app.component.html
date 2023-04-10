@@ -1,0 +1,11 @@
+<header>ToDoApp</header>
+<input name="userInput" type="text" placeholder="Nova tarefa" [(ngModel)]="taskToAdd">
+<button (click)="addTask()">Adicionar tarefa</button>
+<p *ngIf="taskList.length == 0; else tasks">Lista vazia</p>
+<ng-template #tasks>
+  <ul>
+    <li *ngFor="let task of taskList">
+      {{ task }}
+    </li>
+  </ul>
+</ng-template>

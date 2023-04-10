@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <h1>{{ teste | capitalizePhilips }}</h1>
+    <app-photo-list></app-photo-list>
+    <app-modal>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
+            libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
+            voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!
+        </p>
+    </app-modal>
+    <app-card>
+        <span id="titulo">Título do card</span>
+        <span id="subtitulo">Descrição do card</span>
+        <span id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
+            libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
+            voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!</span>
+    </app-card>
+</div>
+<div class="container">
+    <label for="">Insira qualquer coisa</label> <br>
+    <input type="text" [(ngModel)]="texto" required="">
+    <div *ngIf="texto != ''; else invalido">Válido</div>
+    <ng-template #invalido>
+        <div>Inválido, campo vazio.</div>
+    </ng-template>
+</div>
