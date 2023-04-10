@@ -16,7 +16,7 @@ public class ProdutoService {
         this.repository = repository;
     }
 
-    public ProdutoDTO findById(Long id) {
+    public ProdutoDTO findDTOById(Long id) {
         Produto produto = repository.findById(id).orElseThrow();
         return new ProdutoDTO(produto.getNome(),
                               produto.getDescricao(),
@@ -24,9 +24,13 @@ public class ProdutoService {
                               produto.getPreco());
     }
 
+    public Produto findById(Long id) {
+        return repository.findById(id).get();
+    }
+
     public List<ProdutoDTO> findAll() {
-        List<Produto> produtoStream = (List<Produto>) repository.findAll();
-        return produtoStream.stream().map(
+        List<Produto> produtos = (List<Produto>) repository.findAll();
+        return produtos.stream().map(
                 produto -> new ProdutoDTO(
                         produto.getNome(),
                         produto.getDescricao(),
@@ -44,5 +48,22 @@ public class ProdutoService {
                         .preco(produtoDTO.preco())
                         .build()
         );
+    }
+
+    public void update(Produto produto) {
+        repository.save(produto);
+    }
+
+    public void update(ProdutoDTO produtoDTO, Long id) {
+        Produto produto = repository.findById(id).orElseThrow();
+        produto.setNome(produtoDTO.nome());
+        produto.setDescricao(produtoDTO.descricao());
+        produto.setDataDeLancamento(produtoDTO.dataDeLancamento());
+        produto.setPreco(produtoDTO.preco());
+        repository.save(produto);
+    }
+
+    public void deleteById(Long id) {
+        repository.deleteById(id);
     }
 }

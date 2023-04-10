@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edição de Produto</title>
+</head>
+<body>
+    <form action="#"
+          th:action="@{/produto/editar}"
+          th:object="${produto}"
+          method="post">
+        <input type="hidden" th:text="${produto.getId()}" th:field="*{id}" id="id">
+        <label for="nome">Nome</label>
+        <input type="text" th:text="${produto.getNome()}" th:field="*{nome}"  id="nome" placeholder="Nome">
+        <br>
+        <label for="descricao">Descrição</label>
+        <input type="text" th:text="${produto.getDescricao()}" th:field="*{descricao}"  id="descricao" placeholder="Descrição">
+        <br>
+        <label for="dataDeLancamento">Data de lançamento</label>
+        <input type="date" th:text="${produto.getDataDeLancamento()}" th:field="*{dataDeLancamento}"  id="dataDeLancamento" placeholder="Data de Lançamento">
+        <br>
+        <label for="preco">Preço</label>
+        <input type="number" th:text="${produto.getPreco()}" th:field="*{preco}"  id="preco" placeholder="Preço">
+        <br>
+        <input type="submit" value="Editar">
+    </form>
+</body>
+</html>

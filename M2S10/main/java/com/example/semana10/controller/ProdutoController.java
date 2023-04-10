@@ -1,14 +1,11 @@
 package com.example.semana10.controller;
 
+import com.example.semana10.model.Produto;
 import com.example.semana10.model.ProdutoDTO;
-import com.example.semana10.repository.ProdutoRepository;
 import com.example.semana10.service.ProdutoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,7 +25,7 @@ public class ProdutoController {
 
     @GetMapping("/{id}")
     public String mostrarProdutoPorId(@PathVariable Long id, Model model) {
-        ProdutoDTO produto = service.findById(id);
+        ProdutoDTO produto = service.findDTOById(id);
         model.addAttribute("nome", produto.nome());
         model.addAttribute("descricao", produto.descricao());
         model.addAttribute("dataDeLancamento", produto.dataDeLancamento());
@@ -52,5 +49,24 @@ public class ProdutoController {
     public String adicionarProduto(ProdutoDTO produtoDTO, Model model) {
         service.save(produtoDTO);
         return "redirect:../produto";
+    }
+
+    @GetMapping("/editar/{id}")
+    public String mostrarFormularioDeEdicao(ProdutoDTO produtoDTO, Model model, @PathVariable Long id) {
+        Produto produto = service.findById(id);
+        model.addAttribute("produto", produto);
+        return "formulario-de-edicao";
+    }
+
+    @PostMapping("/editar")
+    public String editarProduto(Produto produto, Model model) {
+        service.update(produto);
+        return "redirect:../produto";
+    }
+
+    @GetMapping("deletar/{id}")
+    public String deletarProduto(@PathVariable Long id) {
+        service.deleteById(id);
+        return "redirect:../../produto";
     }
 }
