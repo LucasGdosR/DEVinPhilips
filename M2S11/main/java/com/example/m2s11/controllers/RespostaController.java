@@ -2,10 +2,7 @@ package com.example.m2s11.controllers;
 
 import com.example.m2s11.entities.Resposta;
 import com.example.m2s11.services.RespostaService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,5 +28,10 @@ public class RespostaController {
     @GetMapping(params = "pergunta")
     public List<Resposta> findByPerguntaId(@PathVariable Integer id) {
         return service.findByPerguntaId(id);
+    }
+
+    @PostMapping
+    public Resposta save(@RequestBody Resposta resposta) {
+        return service.save(resposta);
     }
 }

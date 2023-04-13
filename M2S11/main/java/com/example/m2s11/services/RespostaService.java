@@ -25,4 +25,8 @@ public class RespostaService {
     public List<Resposta> findByPerguntaId(Integer id) {
         return repository.findByPerguntaId(id);
     }
+
+    public Resposta save(Resposta resposta) {
+        return repository.save(resposta);
+    }
 }

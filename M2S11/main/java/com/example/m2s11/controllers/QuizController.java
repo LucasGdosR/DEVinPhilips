@@ -2,10 +2,7 @@ package com.example.m2s11.controllers;
 
 import com.example.m2s11.entities.Quiz;
 import com.example.m2s11.services.QuizService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,5 +23,10 @@ public class QuizController {
     @GetMapping("/{id}")
     public Quiz findById(@PathVariable Integer id) {
         return service.findById(id);
+    }
+
+    @PostMapping
+    public Quiz save(@RequestBody Quiz quiz) {
+        return service.save(quiz);
     }
 }

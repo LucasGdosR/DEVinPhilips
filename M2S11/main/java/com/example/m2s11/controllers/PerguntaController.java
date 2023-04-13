@@ -29,4 +29,9 @@ public class PerguntaController {
     public List<Pergunta> findByQuizId(@RequestParam Integer id) {
         return service.findByQuizId(id);
     }
+
+    @PostMapping
+    public Pergunta save(@RequestBody Pergunta pergunta) {
+        return service.save(pergunta);
+    }
 }

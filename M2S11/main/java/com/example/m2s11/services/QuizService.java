@@ -21,4 +21,8 @@ public class QuizService {
     public Quiz findById(Integer id) {
         return repository.findById(id).orElseThrow();
     }
+
+    public Quiz save(Quiz quiz) {
+        return repository.save(quiz);
+    }
 }
