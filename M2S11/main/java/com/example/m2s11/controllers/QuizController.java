@@ -34,4 +34,9 @@ public class QuizController {
     public Quiz update(@RequestBody Quiz quiz) {
         return service.save(quiz);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Integer id) {
+        service.delete(id);
+    }
 }

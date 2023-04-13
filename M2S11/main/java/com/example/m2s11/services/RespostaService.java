@@ -29,4 +29,8 @@ public class RespostaService {
     public Resposta save(Resposta resposta) {
         return repository.save(resposta);
     }
+
+    public void delete(Integer id) {
+        repository.deleteById(id);
+    }
 }

@@ -39,4 +39,9 @@ public class RespostaController {
     public Resposta update(@RequestBody Resposta resposta) {
         return service.save(resposta);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Integer id) {
+        service.delete(id);
+    }
 }

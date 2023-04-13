@@ -39,4 +39,9 @@ public class PerguntaController {
     public Pergunta update(@RequestBody Pergunta pergunta) {
         return service.save(pergunta);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Integer id) {
+        service.delete(id);
+    }
 }

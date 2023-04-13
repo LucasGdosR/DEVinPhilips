@@ -25,4 +25,8 @@ public class QuizService {
     public Quiz save(Quiz quiz) {
         return repository.save(quiz);
     }
+
+    public void delete(Integer id) {
+            repository.deleteById(id);
+    }
 }
