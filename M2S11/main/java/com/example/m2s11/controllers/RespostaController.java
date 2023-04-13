@@ -27,4 +27,9 @@ public class RespostaController {
     public Resposta findById(@PathVariable Integer id) {
         return service.findById(id);
     }
+
+    @GetMapping(params = "pergunta")
+    public List<Resposta> findByPerguntaId(@PathVariable Integer id) {
+        return service.findByPerguntaId(id);
+    }
 }

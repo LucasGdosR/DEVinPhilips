@@ -21,4 +21,8 @@ public class RespostaService {
     public Resposta findById(Integer id) {
         return repository.findById(id).orElseThrow();
     }
+
+    public List<Resposta> findByPerguntaId(Integer id) {
+        return repository.findByPerguntaId(id);
+    }
 }

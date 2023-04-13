@@ -15,6 +15,5 @@ public class Pergunta {
     Integer id;
     String titulo;
     String texto;
-    @ManyToOne
-    Quiz quiz;
+    Integer quizId;
 }

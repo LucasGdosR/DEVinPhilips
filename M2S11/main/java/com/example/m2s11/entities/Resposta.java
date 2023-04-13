@@ -14,6 +14,5 @@ public class Resposta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
     String texto;
-    @OneToOne
-    Pergunta pergunta;
+    Integer perguntaId;
 }

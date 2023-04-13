@@ -1,12 +1,8 @@
 package com.example.m2s11.controllers;
 
 import com.example.m2s11.entities.Pergunta;
-import com.example.m2s11.repositories.PerguntaRepository;
 import com.example.m2s11.services.PerguntaService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,5 +23,10 @@ public class PerguntaController {
     @GetMapping("/{id}")
     public Pergunta findById(@PathVariable Integer id) {
         return service.findById(id);
+    }
+
+    @GetMapping(params = "quiz")
+    public List<Pergunta> findByQuizId(@RequestParam Integer id) {
+        return service.findByQuizId(id);
     }
 }
