@@ -34,4 +34,9 @@ public class RespostaController {
     public Resposta save(@RequestBody Resposta resposta) {
         return service.save(resposta);
     }
+
+    @PutMapping
+    public Resposta update(@RequestBody Resposta resposta) {
+        return service.save(resposta);
+    }
 }

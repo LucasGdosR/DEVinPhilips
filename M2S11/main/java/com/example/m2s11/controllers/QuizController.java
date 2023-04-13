@@ -29,4 +29,9 @@ public class QuizController {
     public Quiz save(@RequestBody Quiz quiz) {
         return service.save(quiz);
     }
+
+    @PutMapping
+    public Quiz update(@RequestBody Quiz quiz) {
+        return service.save(quiz);
+    }
 }

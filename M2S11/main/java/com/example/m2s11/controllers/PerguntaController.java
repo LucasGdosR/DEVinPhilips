@@ -34,4 +34,9 @@ public class PerguntaController {
     public Pergunta save(@RequestBody Pergunta pergunta) {
         return service.save(pergunta);
     }
+
+    @PutMapping
+    public Pergunta update(@RequestBody Pergunta pergunta) {
+        return service.save(pergunta);
+    }
 }
