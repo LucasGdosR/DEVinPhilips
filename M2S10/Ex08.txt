@@ -1,0 +1,5 @@
+JWT significa JSON Web Token. Ele é um padrão da internet utilizado para autenticação e autorização. O token é guardado pelo navegador, de forma que o servidor pode se comportar de maneira stateless. Mesmo que alguém mal intencionado tenha acesso ao token, há um sistema de assinatura com chave privada que resulta em um checksum impedindo fraudes.
+
+Uma requisição que utiliza o JWT leva em seu header o token. O servidor identifica o token e usa um filtro de segurança para verificar que ele dá autorização necessária para a requisição, e também se a assinatura é válida. Se estiver tudo certo, ele atende à requisição. Caso contrário, ele informa o erro.
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c

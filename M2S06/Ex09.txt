@@ -1,0 +1,1 @@
+Modelagem conceitual de dados é o nível mais alto de abstração na representação de dados em diagrama. Ela inclui a representação das Entidades dos bancos de dados e seus relacionamentos, contudo sem entrar em detalhamentos como atributos das entidades ou tipos de dados (texto, números, etc).

@@ -1,0 +1,8 @@
+1 FN:
+  Em cada célula da tabela deve haver apenas uma informação. Não devem existir colunas que guardam a mesma informação só para dividir em células diferentes.
+
+2FN:
+  No caso de uma chave composta, todas as colunas devem depender da combinação das chaves, e não somente de uma delas.
+
+3FN:
+  Todas as colunas que não são chaves primárias devem ser completamente independentes entre si.

@@ -1,0 +1,7 @@
+O JDBC é um Adapter, uma camada de abstração que permite que o mesmo código Java funcione com diferentes SGBD, obrigando os drivers a cumprir um contrato, como uma interface.
+
+Hibernate foi uma biblioteca pioneira que reduziu a verbosidade do JDBC, mas concorrentes surgiram, era muito trabalhoso mudar de implementação.
+
+JPA é uma interface que tornou essa mudança de um BD pra outro menos trabalhosa, padronizando como deveriam seus métodos.
+
+Spring Data é um conjunto de bibliotecas / dependências que abstrai a conexão com banco o banco de dados e fornece implementações otimizadas e automáticas de operações com o banco de dados.

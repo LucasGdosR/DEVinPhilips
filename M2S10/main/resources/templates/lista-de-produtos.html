@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Data de Lançamento</th>
+            <th>Preço</th>
+        </tr>
+        <tr th:each="produto: ${produtos}">
+            <td th:text="${produto.nome()}"></td>
+            <td th:text="${produto.descricao()}"></td>
+            <td th:text="${produto.dataDeLancamento()}"></td>
+            <td th:text="${produto.preco()}"></td>
+        </tr>
+    </table>
+</body>
+</html>
