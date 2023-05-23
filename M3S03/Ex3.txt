@@ -1,0 +1,1 @@
+É possível usar um diretório do próprio host para armazenar os dados do container, de forma que atinge-se a persistência dos dados.
