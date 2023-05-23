@@ -1,0 +1,11 @@
+A virtualização de aplicações em contêiner/microserviço é uma técnica de virtualização que permite empacotar e isolar aplicativos e seus componentes em ambientes leves e portáteis chamados contêineres.
+
+Um contêiner é uma unidade de software que encapsula o código de uma aplicação juntamente com suas dependências e configurações necessárias para executar de forma consistente em diferentes ambientes. Cada contêiner é isolado dos outros contêineres e do sistema hospedeiro, o que garante a segurança e a independência das aplicações.
+
+Essa abordagem difere da virtualização tradicional, em que um sistema operacional completo é virtualizado em uma máquina física ou servidor. No caso da virtualização em contêiner, o sistema operacional do servidor é compartilhado por vários contêineres, o que torna o processo de criação e implantação mais rápido e eficiente.
+
+Os contêineres são construídos a partir de imagens, que são pacotes que contêm todos os componentes necessários para executar uma aplicação, como bibliotecas, código, dependências e arquivos de configuração. Essas imagens são criadas usando ferramentas de gerenciamento de contêineres, como o Docker, e podem ser compartilhadas e implantadas em diferentes ambientes.
+
+A virtualização de aplicações em contêiner/microserviço traz diversas vantagens, como a facilidade de implantação, escalabilidade e gerenciamento. Além disso, os contêineres são altamente portáteis, o que significa que as aplicações podem ser executadas de forma consistente em diferentes ambientes, desde servidores locais até a nuvem.
+
+Os contêineres também são frequentemente usados em arquiteturas de microserviços, em que uma aplicação é dividida em componentes menores e independentes, chamados microserviços. Cada microserviço é encapsulado em um contêiner, o que permite que eles sejam desenvolvidos, implantados e escalados de forma independente. Essa abordagem facilita a manutenção, a evolução e o dimensionamento de aplicações complexas.
