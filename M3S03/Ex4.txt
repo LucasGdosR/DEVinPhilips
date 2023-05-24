@@ -1,0 +1,1 @@
+docker run --name web -d -p 8081:80 -v C:\Users\T-GAMER\OneDrive:/app php:7.2
