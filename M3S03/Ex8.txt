@@ -1,0 +1,8 @@
+Primeiro é feito login no Docker Hub:
+docker login
+
+Depois, o arquivo é renomeado conforme o padrão: nome-de-usuário:tag
+docker tag imageTag nome-de-usuário/nome-da-imagem:tag
+
+Por fim, é feito o push para o Hub:
+docker push nome-de-usuário/nome-da-imagem:tag
