@@ -1,0 +1,11 @@
+1 - Dockerfile (seria um arquivo avulso, sem extensão, nomeado como Dockerfile, na raiz):
+from openjdk:11
+copy . /myapp
+workdir /myapp
+run javac Main.java
+CMD java HelloWorld
+
+2 - Comando para buildar:
+docker build -t nome-da-imagem:tag .
+
+3 - docker run -p porta-host:porta-container nome-da-magem:tag
