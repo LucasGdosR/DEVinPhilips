@@ -3,3 +3,6 @@ kubectl apply -f nome-do-arquivo.yml
 
 # Encerramento:
 kubectl delete -f nome-do-arquivo.yml
+
+# Listar:
+kubectl get <o que quiser listar>
