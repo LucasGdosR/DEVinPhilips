@@ -1,0 +1,1 @@
+Kubernetes é um sistema de orquestração de contêineres. Ele facilita a automatização de escalabilidade, assim como a distribuição de carga entre diferentes conainers, e a recuperação de falhas, criando novos containers à medida que for necessário.
