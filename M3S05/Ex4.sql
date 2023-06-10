@@ -8,4 +8,5 @@ BEGIN
 			DBMS_OUTPUT.PUT_LINE('Soma do produto está entre 150 e 500');
 		ELSE
 			DBMS_OUTPUT.PUT_LINE('Soma dos produtos está acima de 500,00');
+		END IF;
 END;
