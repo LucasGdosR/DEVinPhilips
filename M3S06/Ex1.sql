@@ -5,7 +5,7 @@ DECLARE
  BEGIN
     OPEN cProduto;
         LOOP
-            FETCH cProdutoPreco INTO v_id, v_status;
+            FETCH cProduto INTO v_id;
             EXIT WHEN cProdutoPreco%NOTFOUND;
             
             UPDATE Produto SET Status = 0 WHERE ID = v_id;
