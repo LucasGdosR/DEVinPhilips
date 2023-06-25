@@ -1,0 +1,7 @@
+CREATE TABLE Log(
+	Id NUMBER,
+	Campo VARCHAR2(100),
+	ValorAntigo VARCHAR2(100),
+	NomeTabela VARCHAR2(100),
+	Evento VARCHAR2(100)
+);
