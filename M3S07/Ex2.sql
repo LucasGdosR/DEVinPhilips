@@ -1,0 +1,1 @@
+CREATE OR REPLACE VIEW ApenasLeituraProdutoPreco AS SELECT ID FROM ProdutoPreco WITH READ ONLY;
