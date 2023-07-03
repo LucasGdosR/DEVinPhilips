@@ -1,0 +1,1 @@
+O pattern adapter é uma forma de compatibilizar duas interfaces distintas. Se uma API fornece um tipo de saída, ou requer um tipo de entrada, e outra API possui entradas e saídas incompatíveis, pode ser usado um adaptador para que elas interajam. Caso uma delas mude futuramente, basta alterar o adapter, e assim o restante da aplicação fica isolado/encapsulado.
