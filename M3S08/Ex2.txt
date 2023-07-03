@@ -1,0 +1,8 @@
+1. Single Responsibility, Open-Closed, Liskov's Substitution, Interface Segregation, Dependency Inversion.
+
+2.
+S: aumentar a coesão;
+O: evitar quebrar o que já está funcionando e facilitar a implementação de novas funcionalidades;
+L: evitar quebrar sistemas com heranças inadequadas, evitar relações de herança inadequadas;
+I: evitar implementar métodos não utilizados;
+D: facilitar a compilação de uma aplicação quando um detalhe na ponta muda. Sem a inversão, um detalhe na ponta requer uma recompilação global.
