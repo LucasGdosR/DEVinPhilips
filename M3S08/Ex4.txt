@@ -1,0 +1,3 @@
+1. Design Patterns são padrões de solução para problemas específicos e recorrentes.
+
+2. Existem padrões de criação, estruturais, e comportamentais.
