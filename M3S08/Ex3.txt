@@ -1,0 +1,2 @@
+1. Cada Classe deve possuir apenas um motivo para ser alterada.
+2. O padrão MVC estabelece a responsabilidade de direcionar o fluxo de dados de/para o view ao controller.
