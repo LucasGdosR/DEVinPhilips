@@ -1,0 +1,18 @@
+Pentest: serviço de exploração de vulnerabilidades pré-definidas num período determinado. Diferente de Red Teaming, que tem escopo mais amplo.
+SSL: Secure Sockets Layer. Responsável pela criptografia dos dados no protocolo HTTPS.
+IPTables: tabela interna de um roteador que indica "quem ele conhece".
+Portas: interfaces disponíveis dentro de um dispositivo. Cada aplicação tem sua porta.
+Cracker: usuário de craque que gera CD Keys para jogar Diablo II de graça.
+NSA: órgão de segurança dos EUA.
+Phising: tentativa de roubar dados fingindo ser um site/email/SMS/etc oficial.
+Falta de informação dos riscos: ignorância de comportamentos perigosos.
+Falta de investimento em tecnologias: resultado da mentalidade que tecnologia não gera receita.
+Funcionamento de um Ransomware: o software criptografa os dados, que não ficam mais disponíveis para a empresa. Para se proteger, idealmente há um backup dos dados.
+
+Invasor evolui mais rápido que a empresa. Como tratar? Contrate o invasor para cuidar da sua defesa.
+Como dar conhecimento sobre segurança para colaboradores? Ensine colaboradores chave e encumba-os de converter os demais.
+Como ter código sem brechas e vulnerabilidades? Seguir um checklist com as top 10 vulnerabilidades do NIST.
+Meus dados vazaram, o que fazer? Trocar senhas, fazer BO na polícia.
+Quais protocolos de segurança são recomendados? Os de par de chave pública-privada.
+Como fazer um processo de auditoria assertivo em empresas? Contratar uma consultoria em pentesting e uma palestra sobre segurança.
+Como acompanhar as permissões dos aplicativos? Em "configurações", "aplicativos", "permissões".
