@@ -1,0 +1,5 @@
+Minha primeira sugestão seria designar grupos de acesso para cada setor da empresa, de forma que o pessoal do financeiro tem acesso apenas aos documentos financeiros, os de RH aos de RH, e os de negócios aos de negócios. A gerência também deve ter acesso apenas ao que for necessário, de forma que ter acesso às credenciais de um gestor não dão acesso ilimitado.
+
+Outra possibilidade é segmentar a rede em redes virtuais e utilizar firewalls para impedir o acesso. Dessa forma, mesmo que alguém tenha acesso a um usuário de outro setor, não terá acesso aos mesmos documentos, exceto se estiver em um dispositivo de outro departamento.
+
+A fim de mitigar desastres, é importante ter um backup. Para informações menos críticas, é possível usar apenas um HD externo criptografado. Para documentos de alta criticidade, a fim de evitar gastos e alta complexidade, é mais interessante contratar um serviço de cloud, de forma que se tem redundância geográfica.
